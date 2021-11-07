@@ -11,6 +11,7 @@ class Animal extends Model
     use HasFactory;
     protected $table = 'animals';
     protected $fillable = ['animal_code','name','latin_name','species','habitat_name','class','description'];
+    protected $primaryKey = 'id';
     
     protected function habitats(){
         return $this->belongsTo(Habitat::class, 'habitat_name','code');

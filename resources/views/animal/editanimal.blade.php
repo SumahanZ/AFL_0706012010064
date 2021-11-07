@@ -1,12 +1,12 @@
 @extends('layout.main')
 @section('container')
-<form method="post" action="{{ route('animals.update', $animal->animal_code) }}">
+<form action="{{ route('animals.update', $animal->animal_code) }}" method="post" >
     @method('PATCH')
     @csrf
-    
     <div class="d-flex justify-content-center">
         <h3>Animal Edit Page</h3>
     </div>
+
     <div class="container-sm bg-warning rounded p-3 mt-4 border border-dark">
     <div class="form-group">
         <label class="text-danger font-weight-bold">Animal Code</label>
@@ -56,7 +56,7 @@
 
     <div class="form-group">
         <label class="text-danger font-weight-bold">Habitat</label>
-        <select class="form-select {{ $errors->has('habitat') ? 'error' : '' }}" name="habitat">
+        <select class="form-select {{ $errors->has('habitat_name') ? 'error' : '' }}" name="habitat_name">
           @foreach($habitat as $hab)
             @if($hab->code == $animal->habitat_name)
             <option value="{{$hab->code}}" selected>{{$hab->name}}</option>
@@ -66,9 +66,9 @@
           @endforeach
         </select>
 
-        @if ($errors->has('habitat'))
+        @if ($errors->has('habitat_name'))
         <div class="error text-dark">
-            {{ $errors->first('habitat') }}
+            {{ $errors->first('habitat_name') }}
         </div>
         @endif
       </div>

@@ -92,12 +92,12 @@ class AnimalController extends Controller
     {
         $validatedData = $request->validate([
             'animal_code' => 'required|min:2|max:3|unique:animals',
-            'name' => 'required|unique:animals',
-            'latin_name'=> 'required',
+            'name' => 'required|string|unique:animals',
+            'latin_name'=> 'required|string|unique:animals',
             'species' => 'required|string',
             'habitat_name' => 'required',
             'class' => 'required|string',
-            'description' => 'required'
+            'description' => 'required',
         ]);
 
         Animal::where('animal_code',$code)->update($validatedData);

@@ -2,21 +2,21 @@
 @section('container')
 
 @if(session()->has('success'))
-  <div class="alert alert-primary col-md-2" role="alert">
+  <div class="alert alert-primary col-md-2 text-center" role="alert">
     <button type="button" class="close" data-dismiss="alert">×</button> 
     <b>{{ session('success') }}</b>
   </div>
   @endif
 
   @if(session()->has('createdAnimal'))
-  <div class="alert alert-primary col-md-2" role="alert">
+  <div class="alert alert-primary col-md-2 text-center" role="alert">
     <button type="button" class="close" data-dismiss="alert">×</button> 
     <b>{{ session('createdAnimal') }}</b>
   </div>
   @endif
 
   @if(session()->has('editedAnimal'))
-  <div class="alert alert-primary col-md-2" role="alert">
+  <div class="alert alert-primary col-md-2 text-center" role="alert">
     <button type="button" class="close" data-dismiss="alert">×</button> 
     <b>{{ session('editedAnimal') }}</b>
   </div>
@@ -58,10 +58,10 @@
           <td>                 
                   <form action="/animals/{{ $animal->animal_code }}" method="post">
                   <a class="btn btn-info" href="{{ route('animals.show', $animal->animal_code) }}" ><i class="bi bi-eye"></i></a>
-                  <a class="btn btn-primary mt-2" href="/animals/{{ $animal->animal_code }}/edit"><i class="bi bi-pencil"></i></a>
+                  <a class="btn btn-primary mt-1" href="/animals/{{ $animal->animal_code }}/edit"><i class="bi bi-pencil"></i></a>
                   @csrf
                   @method('delete')
-                  <button type="submit" class="btn btn-danger mt-2"><i class="bi bi-trash-fill"></i></button>
+                  <button type="submit" class="btn btn-danger mt-1"><i class="bi bi-trash-fill"></i></button>
               </form>
           </td>
       </tr>

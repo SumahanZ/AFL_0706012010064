@@ -42,7 +42,7 @@
        <img src="img/image.jpg" class= "img-thumbnail">
       </div>
       <div class="col-12 col-lg-6 mt-4">
-        <h1 class="text-warning text-center">The Importance of Habitats</h1>
+        <h1 class="text-danger text-center">The Importance of Habitats</h1>
         <h4 class="text-dark">First of all, before introducing viewers/visitors to our website, we would like to inform viewers/visitors to the importance of Habitats. Habitats are like life and death to an animal. Every year animals are losing their habitats due to the ignorance of mankind. By publishing this website, we want our visitors to have the utmost knowledge and fun when visiting our zoo.</h4>
 
          <h4 class="text-dark mt-4">Our zoos provide animals from a variety of habitats, each treated with the very best service. Animals in our zoo are being fed 3 times a day, without exception of any animals being left out. Our website also provides specific sections for visitors to have prior knowledge of Habitats than animals live in and also regarding specific information regarding a particular animal. So what are you waiting for? Visit our zoo now!</h4>
@@ -59,7 +59,7 @@
    <div class="container-fluid mt-5">
     <div class="row">
       <div class="col-12 col-lg-7 mt-4">
-        <h1 class="text-warning text-center">Tickets are Affordable and Cheap</h1>
+        <h1 class="text-danger text-center">Tickets are Affordable and Cheap</h1>
         <h4 class="text-dark">We provide tickets that are affordable and cheap. Hence people will not be reserved when going to our zoo, since we prioritize customer satisfaction and also happiness. If we had sold our tickets at a hard price, then people will disregard animals and also miss out on the fun.</h4>
 
          <h4 class="text-dark mt-4">Like we had said on the previous section, we want people to be aware of animals and also their habitats. Therefore, we do not lose out on anything if we sold our tickets at such a cheap price. Here in Zoo Planet, people can visit our zoo for only $4 for adults, $2 for elders, and free of charge for childrens below the age of 15 years old. Hence, don't feel reserved and visit our zoo ASAP!</h4>
