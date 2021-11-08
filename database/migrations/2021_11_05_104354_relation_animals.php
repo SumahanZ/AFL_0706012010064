@@ -15,7 +15,7 @@ class RelationAnimals extends Migration
     {
         Schema::table('animals', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->foreign('habitat_name')->references('code')->on('habitats')->onDelete('cascade');
+            $table->foreign('habitat_name')->references('code')->on('habitats')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
