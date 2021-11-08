@@ -14,7 +14,6 @@ class CreateAnimalsTable extends Migration
     public function up()
     {
         Schema::create('animals', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
             $table->id();
             $table->string('animal_code')->unique();
             $table->string('name')->unique();

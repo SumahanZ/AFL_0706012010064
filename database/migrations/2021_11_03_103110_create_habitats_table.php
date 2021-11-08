@@ -14,7 +14,6 @@ class CreateHabitatsTable extends Migration
     public function up()
     {
         Schema::create('habitats', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
             $table->string('code')->primary();
             $table->string('name')->unique();
             $table->string('humidity');
